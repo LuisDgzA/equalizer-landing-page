@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+:root{
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    /* background: #fff url(./assets/bg-main-mobile.png) no-repeat; */
+    /* background-position: -40% -300px; */
+
+    /* background-size:contain;     */
+    font-family: 'IBM Plex Sans',sans-serif;
+    width: 100%;
+    /* box-sizing: border-box; */
+    /* padding: 3.5rem; */
+    /* color: #fff; */
+    /* position: absolute; */
+}
+
+.hero{
+    /* border: 1px solid red; */
+    display: grid;
+    /* background: #fff url(./assets/bg-main-mobile.png) no-repeat center; */
+
+    /* gap: 1.2rem; */
+    grid-template-columns: 1fr;
+
+    /* grid-template-columns: 1fr 300px; */
+    grid-template-rows: auto auto auto;
+    margin: 2.5rem 1.8rem 10rem 1.8rem;
+    /* margin: 3.5rem 0 0 3.5rem; */
+}
+
+.hero__brand{
+    /* background-color:bisque; */
+    padding-bottom: 3rem;
+
+}
+
+.hero__title{
+    /* background-color: aqua; */
+    grid-row: 2;
+    font-size: 1.6rem;
+    /* text-align: center; */
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    line-height: 2.3rem;
+
+}
+
+.hero__text{
+    /* background-color: blue; */
+    grid-row: 3;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    /* font-size: 1.25rem; */
+
+    /* text-align: center; */
+}
+
+.hero__image{
+    display: none;
+    /* background-color: red; */
+    grid-row: span 2;
+
+}
+
+.hero__image img{
+    width: 100%;
+    /* padding-bottom: 3rem; */
+    /* position: relative;
+    left: 3.5rem;
+    top: -3.5rem; */
+}
+
+.backgrounds-images{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.backgrounds-images .image-bg:nth-child(1){
+    background: #fff url(./assets/bg-main-mobile.png) no-repeat center;
+    background-size: cover;
+    /* background-position: 80% 10%; */
+    width: 27rem;
+    height: 27rem;
+    position: absolute;
+    z-index: -100;
+    top: -80px;
+    right: 190px
+}
+
+
+/* ----------------------- MAIN CONTENT --------------------------*/
+
+
+
+#phone-container{
+    display: flex;
+    justify-content: center;
+    background: #191826;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+#phone-container__bg{
+    width: 75%;
+    height: 100%;
+    background: url("./assets/bg-pattern-2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+#phone-img{
+    position: absolute;
+    /* background: url("./assets/illustration-app.png"); */
+    width: 100%;
+    height: 100%;
+}
+.center{
+    text-align: center;
+}
+#imgPhone{
+    position: relative;
+    top: -100px;
+    width: 240px;
+}
+/* .absolute{
+    position: absolute;
+} */
+
+#pricingContent{
+   
+    width: 100%;
+    /* height: 200px; */
+    background: #fa7353;
+    position: absolute;
+    top: 450px;
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 0.8rem;
+    /* border-top-right-radius: 0.8rem; */
+    max-width: 100%;
+}
+
+.pricing-title{
+    font-size: 1.9rem;
+}
+#paragraphPremium{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+#price{
+    font-size: 1.4rem;
+    margin:  1rem 0;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+}
+#price span{
+    font-size: 3.4rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.btn-download{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1.1rem 0;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.btn__ios{
+    background: #000;
+    color: #fff;
+    margin-bottom: 1rem;
+    
+}
+.btn__android{
+    background: #fff;
+    color: #000;
+}
+.btn-download figure{
+    margin-right: 0.5rem;
+}
+
+/*-----------------------------FOOTER ------------------------*/
+
+footer{
+    /* position:relative; */
+    /* top: -80px; */
+    margin-top: 34rem;
+    padding: 1.2rem;
+}
+footer p{
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.bold{
+    font-weight: bold;
+}
+#footer__firstp{
+    margin-top: 2rem;
+}
+.footer-icons{
+    display: flex;
+    gap: 1rem;
+}
+@media (min-width: 576px) {
+    .backgrounds-images .image-bg:nth-child(1){
+        /* background: #fff url(./assets/bg-main-mobile.png) no-repeat center;
+        background-size: cover;
+        width: 27rem;
+        height: 27rem;
+        position: absolute;
+        z-index: -100;
+        top: -80px; */
+        right: 100px
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .hero{
+        margin: 4rem 0 18rem 2.5rem;
+        grid-template-columns: 1fr 250px;
+    }
+    .hero__title{
+        font-size: 2.7rem;
+        line-height: 3.7rem;
+    }
+    .hero__text{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .hero__image{
+        display: block;
+    }
+    .hero__image img{
+        width: 100%;
+        position: relative;
+        top: -7rem;
+    }
+    .backgrounds-images .image-bg:nth-child(1){
+        background: #fff url(./assets/bg-main-tablet.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: -120px;
+        right: 120px;
+    }
+    .main-content{
+        padding: 0rem 2rem;
+    }
+    #imgPhone{        
+        top: -150px;
+        left: -150px;
+        width: 300px;
+    }
+    #pricingContent{   
+        width: 55%;    
+        top: 150px;
+        left: 30%;
+        padding: 4rem 3rem;    
+        max-width: 400px;  
+    }
+    
+    #phone-container{
+        
+        height: 650px;
+        border-radius: 1rem;
+        
+    }
+    footer{
+        margin-top: 10rem;
+        padding: 2rem;
+        margin-bottom: -500px;
+    }
+    #footer__title{
+        width: 800px;
+        margin-bottom: 1rem;
+    }
+    .footer-flex{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #footer__firstp{
+        margin-top: 0;
+    }
+
+    
+    
+}
+
+@media (min-width: 1200px) {
+    .hero{
+        margin: 2.5rem 0rem 18rem 10rem;
+
+        grid-template-columns: 1fr 300px;
+    }
+    .backgrounds-images .image-bg:nth-child(1){
+        background: #fff url(./assets/bg-main-desktop.png) no-repeat center;
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+        top: -120px;
+        right: 120px;
+    }
+    .hero__title{
+        font-size: 3.6rem;
+        line-height: 5rem;
+
+    }
+    .hero__text{
+        font-size: 1.25rem;
+        line-height: 1.9rem;
+    }
+    .hero__image img{
+        width: 100%;
+        position: relative;
+        top: -4rem;
+    }
+    .main-content{
+        padding: 0rem 10rem;
+    }
+    #imgPhone{       
+        left: -250px;
+    }
+    #pricingContent{   
+        top: 100px;
+        /* left: 55%; */
+        left: 550px;
+        /* padding: 4rem 3rem;     */
+        max-width: 450px;  
+    }
+    #imgPhone{        
+        top: -150px;
+        left: -300px;
+        width: 280px;
+    }
+    #phone-container{        
+        height: 550px;
+        
+        
+    }
+    .footer-flex{
+        padding: 0 8rem;
+    }
+    #footer__text{
+        width: 650px;
+    }
+    #footer__title{
+        width: 300px;
+        margin-bottom: 0rem;
+    }
+    
+
+}
+
+
+
+
+
